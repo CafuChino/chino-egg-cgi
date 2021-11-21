@@ -1,6 +1,8 @@
 {
   "compileOnSave": true,
   "compilerOptions": {
+    "resolveJsonModule": true,
+    "esModuleInterop": true,
     "target": "es2017",
     "module": "commonjs",
     "strict": true,
@@ -10,6 +12,7 @@
     "charset": "utf8",
     "allowJs": false,
     "pretty": true,
+    "moduleResolution": "Node",
     "noEmitOnError": false,
     "noUnusedLocals": true,
     "noUnusedParameters": true,
@@ -26,5 +29,5 @@
     "app/public",
     "app/views",
     "node_modules*"
-  ]
+  ],
 }
