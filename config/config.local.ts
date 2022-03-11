@@ -1,10 +1,17 @@
 import { EggAppConfig, PowerPartial } from 'egg';
-import { EggSequelizeOptions } from 'egg-sequelize';
+import { Options } from 'sequelize';
 import databaseConfig from '../database/config.json';
 
 export default () => {
   const config: PowerPartial<EggAppConfig> = {
-    sequelize: { ...databaseConfig.development as EggSequelizeOptions },
+    sequelize: {
+      host: databaseConfig.development.host,
+      username: databaseConfig.development.username,
+      password: databaseConfig.development.password,
+      database: databaseConfig.development.database,
+      dialect: databaseConfig.development.dialect as Options['dialect'],
+
+    },
     redis: {
       client: {
         port: 6379, // Redis port

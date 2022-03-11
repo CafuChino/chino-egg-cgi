@@ -16,7 +16,10 @@ import 'egg-jsonp';
 import 'egg-view';
 import 'egg-sequelize';
 import 'egg-redis';
+import 'egg-validate';
+import 'egg-cors';
 import { EggPluginItem } from 'egg';
+
 declare module 'egg' {
   interface EggPlugin {
     onerror?: EggPluginItem;
@@ -33,5 +36,7 @@ declare module 'egg' {
     view?: EggPluginItem;
     sequelize?: EggPluginItem;
     redis?: EggPluginItem;
+    validate?: EggPluginItem;
+    cors?: EggPluginItem;
   }
 }

@@ -1,5 +1,6 @@
 import { Application, IBoot } from 'egg';
 import MakeResponse from './utils/makeResponse';
+
 export default class FooBoot implements IBoot {
   private readonly app: Application;
 
@@ -55,7 +56,7 @@ export default class FooBoot implements IBoot {
       'JSON.RESP',
     ];
     for (const command of commands) {
-      console.log(command);
+      console.log(`Hook build in command: ${command}`);
       this.app.redis.addBuiltinCommand(command);
     }
   }
