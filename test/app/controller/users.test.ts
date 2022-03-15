@@ -1,4 +1,5 @@
-import { app, assert } from 'egg-mock/bootstrap';
+import { app } from 'egg-mock/bootstrap';
+import assert from 'assert';
 
 describe('test/app/controller/users.test.js', () => {
   describe('GET /users', () => {

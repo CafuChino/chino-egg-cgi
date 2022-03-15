@@ -1,5 +1,5 @@
 import { factory } from 'factory-girl';
-module.exports = app => {
+export default app => {
   // 可以通过 app.factory 访问 factory 实例
   app.factory = factory;
 

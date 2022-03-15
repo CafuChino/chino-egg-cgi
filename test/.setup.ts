@@ -1,5 +1,5 @@
-const { app } = require('egg-mock/bootstrap');
-const factories = require('./factories');
+import { app } from 'egg-mock/bootstrap';
+import factories from './factories';
 
 before(() => factories(app));
 afterEach(async () => {
