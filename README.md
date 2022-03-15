@@ -2,6 +2,8 @@
 
 基于Egg构建的TypeScript后端模板
 
+[![Test and Build](https://github.com/CafuChino/chino-egg-cgi/actions/workflows/testAndBuild.yml/badge.svg)](https://github.com/CafuChino/chino-egg-cgi/actions/workflows/testAndBuild.yml)
+
 ## 最低要求
 
 - Node.js 8.x
