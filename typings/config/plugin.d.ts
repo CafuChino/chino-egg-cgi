@@ -1,4 +1,4 @@
-// This file is created by egg-ts-helper@1.25.9
+// This file is created by egg-ts-helper@1.30.2
 // Do not modify this file!!!!!!!!!
 
 import 'egg';
@@ -19,7 +19,6 @@ import 'egg-redis';
 import 'egg-validate';
 import 'egg-cors';
 import { EggPluginItem } from 'egg';
-
 declare module 'egg' {
   interface EggPlugin {
     onerror?: EggPluginItem;

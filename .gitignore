@@ -8,8 +8,9 @@ logs/
 .DS_Store
 .vscode
 *.swp
-*.lock
+*.log
 !.autod.conf.js
+typings/
 
 app/**/*.js
 test/**/*.js
