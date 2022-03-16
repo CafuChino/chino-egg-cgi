@@ -13,7 +13,7 @@
 
 1. Sequelize (MySql, PostgreSQL, SQLite, MSSQL)
 2. Redis (以及rejson插件支持)
-3. Sentry
+3. Sentry   
 
 ## Tips
 
