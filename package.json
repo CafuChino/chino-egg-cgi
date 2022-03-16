@@ -15,7 +15,7 @@
     "test-local": "egg-bin test",
     "test": "npm run lint -- --fix && npm run test-local",
     "cov": "cross-env egg-bin cov",
-    "tsc": "ets && tsc -p tsconfig.json",
+    "tsc": "ets && tsc -p tsconfig.production.json",
     "ci": "cross-env eslint . && cross-env NODE_ENV=test npx sequelize db:migrate && egg-bin cov",
     "autod": "autod",
     "lint": "eslint . --ext .ts",
@@ -23,6 +23,8 @@
     "prepare": "husky install"
   },
   "dependencies": {
+    "@sentry/node": "^6.18.2",
+    "@sentry/tracing": "^6.18.2",
     "cross-env": "^7.0.3",
     "egg": "^2.6.1",
     "egg-cors": "^2.2.3",

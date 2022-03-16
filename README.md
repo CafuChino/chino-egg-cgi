@@ -13,6 +13,7 @@
 
 1. Sequelize (MySql, PostgreSQL, SQLite, MSSQL)
 2. Redis (以及rejson插件支持)
+3. Sentry
 
 ## Tips
 
@@ -25,10 +26,10 @@
     - `yarn sequelize model:generate` 创建新表和他的migrate
 4. 使用`yarn plop`快速创建新的Controller和Service
 5. 配置开发环境很复杂，使用chino-dev-box可以一键构建所需环境
+6. 已接入Github Actions CI
+7. 已接入Sentry
 
 
 ## TODO
 
-- 接入自动化CI
-- 接入内置Sentry支持
 - 接入内置MongoDB支持

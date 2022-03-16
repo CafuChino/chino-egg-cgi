@@ -5,4 +5,9 @@ export default class HomeController extends Controller {
     const { app, ctx } = this;
     app.makeCommonResponse(ctx, 200, await ctx.service.test.sayHi('Chino'), {});
   }
+
+  public async throwError() {
+    const { app, ctx } = this;
+    app.makeCommonResponse(ctx, 200, await ctx.service.test.throwError(), {});
+  }
 }

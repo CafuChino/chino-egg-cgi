@@ -1,5 +1,6 @@
 import 'egg';
 import 'IORedis'
+import * as Sentry from '@sentry/node';
 import MakeResponse from '../utils/makeResponse';
 
 declare module 'IORedis' {
@@ -12,5 +13,6 @@ declare module 'egg' {
     makeCommonResponse: MakeResponse.makeCommonResponse;
     makeErrorResponse: MakeResponse.makeErrorResponse;
     redis: Redis & Singleton<Redis>;
+    sentry: Sentry;
   }
 }
